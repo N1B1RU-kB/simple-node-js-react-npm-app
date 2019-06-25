@@ -20,7 +20,7 @@ pipeline {
         { 
             steps 
             {
-                sh 'npm test' 
+                sh 'npm ./jenkins/scripts/test' 
             }
         }
     }
