@@ -10,6 +10,9 @@ pipeline {
             steps {
                 sh 'npm install' 
             }
+        stage('Build') { 
+            steps {
+                sh 'simple-node-js-react-npm-app/jenkins/scripts/test' 
         }
     }
 }
