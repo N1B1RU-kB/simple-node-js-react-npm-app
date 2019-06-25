@@ -12,7 +12,8 @@ pipeline {
             }
         stage('Build') { 
             steps {
-                sh 'simple-node-js-react-npm-app/jenkins/scripts/test' 
+                sh 'simple-node-js-react-npm-app/jenkins/scripts/test.sh' 
+            }
         }
     }
 }
